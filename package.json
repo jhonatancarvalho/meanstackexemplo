@@ -1,0 +1,11 @@
+{
+  "name": "contatosapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.10.2",
+    "express": "^4.11.1",
+    "mongojs": "^2.4.0"
+  }
+}

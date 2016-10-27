@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html ng-app="contatosApp">
+   <head>
+      <link rel="icon" href="http://icon-icons.com/icons2/272/PNG/512/Contacts_30028.png">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+      <script src="src/app.js"></script>
+      <script src="src/controllers/controller.js"></script>
+      <script src="src/controllers/contatoController.js"></script>
+      <title>Contatos</title>
+   </head>
+   <body>
+      <div class="container" ng-controller="ContatoController">
+         <h1>Lista de Contatos</h1>
+         <div class="row">
+            <div class="col-sm-4">
+               <label>Nome</label>
+               <input class="form-control" ng-model="contato.nome">
+            </div>
+            <div class="col-sm-5">
+               <label>Email</label>
+               <input class="form-control" ng-model="contato.email">
+            </div>
+            <div class="col-sm-3">
+               <label>Número</label>
+               <input class="form-control" ng-model="contato.numero">
+            </div>
+         </div>
+         <div class="row" style="width: 100%; text-align: center; margin-top: 5px; margin-bottom: 30px">
+            <button class="btn btn-primary" ng-click="adicionarContato()">Adicionar contato</button>
+            <button class="btn btn-info" ng-click="atualizarContato()">Atualizar</button>
+            <button class="btn btn-info" ng-click="removerSelecaoContato()">Limpar</button>
+         </div>
+         <table class="table">
+            <thead>
+               <tr>
+                  <th>Nome</th>
+                  <th>Email</th>
+                  <th>Número</th>
+                  <th>Ações</th>
+                  <th> </th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr ng-repeat="contato in listaContatos">
+                  <td>{{contato.nome}}</td>
+                  <td>{{contato.email}}</td>
+                  <td>{{contato.numero}}</td>
+                  <td><a href="#" class="btn btn-danger" ng-click="removerContato(contato._id)">
+                     <span class="glyphicon glyphicon-trash"></span>
+                     </a>
+                  </td>
+                  <td><a href="#" class="btn btn-warning" ng-click="editarContato(contato._id)">
+                     <span class="glyphicon glyphicon-pencil"></span>
+                     </a>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </body>
+</html>
