@@ -1,6 +1,6 @@
 <h2>MEAN Stack</h2>
 
-<img src="http://s13.postimg.org/acg371zx3/listacontatos.png" alt="mean stack tutorial app">
+<img src="http://s17.postimg.org/5ulysjyxb/listacontatos.png" alt="mean stack tutorial app">
 
 <br>Este repositório contém um exemplo simples de RESTful para uma lista de contatos utilizando o MEAN stack:
 
