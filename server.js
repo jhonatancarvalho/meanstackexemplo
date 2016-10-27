@@ -42,7 +42,7 @@ app.put('/listaContatos/:id', function (req, res) {
   let id = req.params.id;
   db.listaContatos.findAndModify({
     query: {_id: mongojs.ObjectId(id)},
-    update: {$set: {nome: req.body.nome, email: req.body.email, numero: req.body.numero}},
+    update: {$set: {nome: req.body.nome, email: req.body.email, numero: req.body.numero, detalhes: req.body.detalhes}},
     new: true}, function (err, doc) {
       res.json(doc);
     }

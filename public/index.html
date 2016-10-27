@@ -12,6 +12,7 @@
    <body>
       <div class="container" ng-controller="ContatoController">
          <h1>Lista de Contatos</h1>
+         <br>
          <div class="row">
             <div class="col-sm-4">
                <label>Nome</label>
@@ -26,12 +27,19 @@
                <input class="form-control" ng-model="contato.numero">
             </div>
          </div>
+         <br>
+         <div class="row">
+            <div class="col-sm-12">
+                <label>Detalhes</label>
+                <textarea class="form-control" rows="3" ng-model="contato.detalhes"></textarea>
+            </div>
+         </div>
          <div class="row" style="width: 100%; text-align: center; margin-top: 5px; margin-bottom: 30px">
             <button class="btn btn-primary" ng-click="adicionarContato()">Adicionar contato</button>
             <button class="btn btn-info" ng-click="atualizarContato()">Atualizar</button>
             <button class="btn btn-info" ng-click="removerSelecaoContato()">Limpar</button>
          </div>
-         <table class="table">
+         <table class="table table-hover">
             <thead>
                <tr>
                   <th>Nome</th>
@@ -42,7 +50,7 @@
                </tr>
             </thead>
             <tbody>
-               <tr ng-repeat="contato in listaContatos">
+               <tr ng-repeat-start="contato in listaContatos" ng-click="expandirContato(contato)">
                   <td>{{contato.nome}}</td>
                   <td>{{contato.email}}</td>
                   <td>{{contato.numero}}</td>
@@ -54,6 +62,9 @@
                      <span class="glyphicon glyphicon-pencil"></span>
                      </a>
                   </td>
+               </tr>
+               <tr ng-if="contato.expandir" ng-repeat-end="">
+                    <td colspan="5" style="text-align: center;"><b>{{contato.detalhes}}</b></td>
                </tr>
             </tbody>
          </table>

@@ -42,4 +42,15 @@ class ContatoController extends Controller {
     this.getScope().contato = "";
   }
 
+  expandirContato(contato) {
+    if (contato.detalhes == "" || contato.detalhes == undefined){
+      return;
+    }
+    if (contato.expandir == true){
+        contato.expandir = false;
+        return;
+    }
+    contato.expandir = true;
+  }
+
 }
