@@ -11,10 +11,10 @@
 <li>NodeJS</li>
 </ul>
 
-<br>M: MongoDB (Licença: GNU AGPL v. 3.0) - Um poderoso banco de dados "no-SQL", que trabalha diretamente com objetos BSON / JSON, cuja performance com grande volume de dados o torna candidato ideal a uso em aplicações de "Big data"; 
-<br><br>E: Express.js (Licença: MIT) - Um framework para criação de aplicações cliente-servidor, baseadas em Javascript e Node.js, que usem REST como API. Ele se define como um "web framework" para node.js, e faz um pouco do que o JSF e o JAX-WS fazem, no Java EE;
-<br><br>A: Angular.js (Licença: MIT) - É um framework MVC para uso em páginas HTML, muito interessante. Feito pela Google, ele permite criar páginas HTML 5 dinâmicas, com a ajuda do “two-way data binding”;
-<br><br>N: Node.js (Licença: Própria, tipo CopyLeft) - É uma aplicação que usa o engine Javascript V8, do Chrome, para criar aplicações servidoras, baseadas em "no blocking I/O", que respondem muito bem ao alto tráfego e grande volume de dados. Toda a programação da sua aplicação servidora é feita em Javascript;
+<br><b>M</b>: MongoDB (Licença: GNU AGPL v. 3.0) - Um poderoso banco de dados "no-SQL", que trabalha diretamente com objetos BSON / JSON, cuja performance com grande volume de dados o torna candidato ideal a uso em aplicações de "Big data"; 
+<br><br><b>E</b>: Express.js (Licença: MIT) - Um framework para criação de aplicações cliente-servidor, baseadas em Javascript e Node.js, que usem REST como API. Ele se define como um "web framework" para node.js, e faz um pouco do que o JSF e o JAX-WS fazem, no Java EE;
+<br><br><b>A</b>: Angular.js (Licença: MIT) - É um framework MVC para uso em páginas HTML, muito interessante. Feito pela Google, ele permite criar páginas HTML 5 dinâmicas, com a ajuda do “two-way data binding”;
+<br><br><b>N</b>: Node.js (Licença: Própria, tipo CopyLeft) - É uma aplicação que usa o engine Javascript V8, do Chrome, para criar aplicações servidoras, baseadas em "no blocking I/O", que respondem muito bem ao alto tráfego e grande volume de dados. Toda a programação da sua aplicação servidora é feita em Javascript;
 
 Todas as ferramentas do Stack MEAN são livres, de acordo com os termos de suas licenças, e podem ser instaladas em qualquer plataforma, tanto para desenvolvimento como para produção.
 
