@@ -28,6 +28,7 @@ Todas as ferramentas do Stack MEAN são livres, de acordo com os termos de suas 
     mongod
 
 3º passo: Faço o clone/download do repositório em sua maquina usando:
+
     git clone git@github.com:jhonatancarvalho/meanstackexemplo.git
 
 4º passo: Abra a pasta do repositório clonado e instale os modulos:
@@ -38,4 +39,4 @@ Todas as ferramentas do Stack MEAN são livres, de acordo com os termos de suas 
 
     node server
 
-Pronto, já esta tudo rodando (y). Acesse sua aplicação através do http://localhost:3000/.
+Pronto, já esta tudo rodando. Acesse sua aplicação através do <a href="http://localhost:3000/">http://localhost:3000/</a>.
